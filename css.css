@@ -6,8 +6,12 @@ body {
 	font-family: arial;
 }
 
+a {
+	text-decoration: none;
+	color: inherit;
+}
 h3 { 
-	font-size: 1.5em;
+	font-size: 1.1em;
 }
 
 .previewinfo{
@@ -117,9 +121,6 @@ input[type=text] {
 	color:rgba(255,255,255,1);
 }
 
-
-
-
 .options{
 	position: absolute;
 	top:0;
@@ -199,9 +200,42 @@ input[type=text] {
 	margin-right:15%;
 	margin-top:1.5%;
 	min-width: 850px;
-
-
+	position: relative;
 }
+
+.dreamscenter {
+	display: inline-block;
+	background-color: #F0F0F0;
+	overflow: auto;
+	width:70%;
+	margin-top:1.5%;
+	margin-left: 15%;
+	margin-bottom: 5%;
+	min-width: 850px;
+	position: relative;
+	padding-left: 1%;
+	padding-right: 1%;
+}
+
+.catagories{
+	width:14%;
+	height:100%;
+	float:left;
+	display: inline;
+	position: fixed;
+	margin-top: 1.5%;
+	background-color: #F0F0F0;
+}
+.catagories ul{
+	padding:5px;
+	margin:0;
+}
+.catagories li{
+	padding:10px;
+	margin:0.5%;
+	background-color: #ffffff;
+}
+
 /* Simple grid */
 .g-row{
 	width: 100%;
@@ -232,7 +266,6 @@ input[type=text] {
 .g-50{
 	width: 48%;
 	float: left;
-	
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
@@ -244,7 +277,14 @@ input[type=text] {
 	position: relative;
 	overflow: hidden;
 	margin-bottom:10px;
+}
 
+.g-20{
+	width:24%;
+	position: relative;
+	overflow: hidden;
+	margin-bottom:10px;
+	
 }
 
 .textbox{
@@ -279,14 +319,20 @@ input[type=text] {
 }
 
 .ranking h1{
-	font-size:8em;
-	opacity: 0.5;
+	font-size:30px;
+	opacity: 0.6;
 	display: block;
-	text-align: center;
-	margin:auto auto;
+	text-align: left;
+	margin-left:10px;
+	margin-top:10px;
+
 } 
 
 .g-25:hover .textbox{
+	top:0%;
+}
+
+.g-20:hover .textbox{
 	top:0%;
 }
 .g-48:hover .textbox{
@@ -344,6 +390,7 @@ input[type=text] {
 .page-wrap{
 	margin-bottom: 5%;
 }
+/*LOGIN PAGE*/
 
 /*For small screen only*/ 
 @media only screen and (min-width: 320px) and (max-width: 900px), (orientation: portrait){
@@ -390,9 +437,7 @@ input[type=text] {
 		margin:20px;
 	}
 
-	.ranking h1{
-		font-size:10em;
-	}
+
 
 	#search{
 		width:88%;
@@ -436,9 +481,7 @@ input[type=text] {
 		margin:10px;
 	}
 
-	.ranking h1{
-		font-size:6em;
-	}
+
 
 }
 
@@ -455,9 +498,6 @@ input[type=text] {
 		margin:10px;
 	}
 
-	.ranking h1{
-		font-size:7em;
-	}
 }
 
 @media only screen and (min-width: 1501px) {
@@ -473,9 +513,6 @@ input[type=text] {
 		margin:10px;
 	}
 
-	.ranking h1{
-		font-size:7em;
-	}
 }
 
 
