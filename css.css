@@ -12,6 +12,7 @@ a {
 }
 h3 { 
 	font-size: 1.1em;
+	margin-left:5px;
 }
 
 .previewinfo{
@@ -53,7 +54,7 @@ h3 {
 #logo {
 	height:60px;
 	position: relative;
-	margin: 10px;
+	margin: 20px;
 	margin-left:16%;
 	float: left;
 }
@@ -61,16 +62,17 @@ h3 {
 #search	{
 	position: relative;
     float: right;
-	padding-right: 16%;
-	padding-top: 20px;
+    margin-right: 9%;
+    margin-top: 30px;
+    width:15%;
 
 }
-
+#rightnav{
+	float:right;
+}
 input[type=text] {
 	padding: 10px;
-    width: 250px;
-    -webkit-transition: width 0.4s ease-in-out;
-    transition: width 0.4s ease-in-out;
+    width: 100%;
 }
 
 .dropbtn p{
@@ -84,7 +86,7 @@ input[type=text] {
 	background-color: #162252;
     color: #F5F5F5;
     padding: 5px;
-    min-width: 150px;
+    width: 100%;
     font-size: 40px;
     border: none;
     cursor: pointer;
@@ -101,6 +103,7 @@ input[type=text] {
 .dropdown {
     position: relative;
     display: inline-block;
+    width:8%;
 
 }
 
@@ -111,43 +114,23 @@ input[type=text] {
     color:#384887;
 
 }
-.dropdown:hover .options{
-	display: block;
-	left:100%;
-	color:rgba(255,255,255,1);
-}
+
 
 .dropdown:hover a{
 	color:rgba(255,255,255,1);
 }
 
-.options{
-	position: absolute;
-	top:0;
-	left:40%;
-	width: 100%;
-	height: 100%;
-	background: rgba(255,255,255,0);
-	transition: 0.5s;
-	margin:0px;
-	padding: 0px;
-	overflow: hidden;
-}
+ button.navilogin{
+ 	background-color: #f0f0f0;
+	color: #384887;
+	padding:5px;
+	border: none;
+	cursor: pointer;
+	border-radius: 4%;
+	float: right;
+	
+ }
 
-.options a{
-	color:rgba(255,255,255,0);
-	text-decoration: none;
-}
-
-.options a:hover{
-	color:rgba(200,200,200,1);
-}
-
-
-.options ul{
-	font-size: 14px;
-	list-style: none;
-}
 #profile{
 	width:40px;
 	float:left;
@@ -185,12 +168,21 @@ input[type=text] {
   justify-content: space-around;
 }
 
-.g-48{
-	width: 48%;
-	position: relative;
-	overflow: hidden;
-	margin-bottom:10px;
+.flex-containercolumn {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-flex-flow: column wrap;
+  justify-content: space-around;
 }
+
 
 .center {
 	display: inline-block;
@@ -249,18 +241,25 @@ input[type=text] {
 .g-60{
 	width: 60%;
 	float: left;
-
-	display: inline-block;
+	display: block;
 	position: relative;
 	overflow: hidden;
 }
 
-.g-30{
+
+.g-39{
 	width: 39%;
 	float: left;
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
+}
+
+.g-48{
+	width: 48%;
+	position: relative;
+	overflow: hidden;
+	margin-bottom:10px;
 }
 
 .g-50{
@@ -269,23 +268,107 @@ input[type=text] {
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
-	margin-left:20px;
+	margin-left:1.5%;
 }
 
-.g-25{
+.g-32{
 	width: 32%;
 	position: relative;
 	overflow: hidden;
 	margin-bottom:10px;
 }
 
-.g-20{
+.g-24{
 	width:24%;
 	position: relative;
 	overflow: hidden;
 	margin-bottom:10px;
 	
 }
+
+.g-20{
+	width:20%;
+	display:block;
+	float:left;
+	position: relative;
+	margin-bottom:10px;
+	margin-top:30px;
+	margin-left:20px;
+	background-color: #f0f0f0;
+}
+
+.g-65{
+	width:70%;
+	margin-top:30px;
+	margin-left:60px;
+	float: left;
+	display: block;
+	position: relative;
+	overflow: hidden;
+
+}
+
+.g-65 h1{
+	margin-left: 52px;
+
+}
+
+.g-half{
+	width:45%;
+	margin-left: 50px;
+	float: left;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+}
+.g-half img{
+	width:40%;
+	display: block;
+	position: relative;
+	float: left;
+}
+
+.g-20 li img{
+	height:30px;
+	width:auto;
+	overflow: visible;
+	margin:1.5%;
+	margin-right:20px; ;
+	float: left;
+}
+
+.g-20 ul{
+	padding:5px;
+	margin:0;
+}
+
+
+.g-20 li{
+	height:40px;
+	padding:10px;
+	margin:5px;
+	background-color: #ffffff;
+}
+
+.g-20 li p{
+display: block;
+position: relative;
+float: left;
+margin-top:12.5px;
+}
+
+h4{
+	text-align: center;
+	margin:7px;
+}
+#profileavatar{
+	width:50%;
+	margin-left: 25%;
+	margin-right: 25%;
+	margin-top:15px;
+	border-radius: 50%;
+}
+
 
 .textbox{
 	position: absolute;
@@ -304,6 +387,31 @@ input[type=text] {
 
 .slide{
 	margin:20px;
+}
+
+.thumbnailtext{
+	float:left;
+	display:block;
+	position: relative;
+	margin-left:20px;
+}
+
+.thumbnailtext h2{
+	margin-top:0;
+	font-size: 1em;
+}
+
+.thumbnailtext p{
+	
+	font-size: 0.9em;
+}
+
+
+.thumbnail{
+	margin-bottom: 10px;
+	width:80%;
+	padding: 10px;
+	background-color: #f0f0f0;
 }
 
 .ranking{
@@ -328,11 +436,11 @@ input[type=text] {
 
 } 
 
-.g-25:hover .textbox{
+.g-32:hover .textbox{
 	top:0%;
 }
 
-.g-20:hover .textbox{
+.g-24:hover .textbox{
 	top:0%;
 }
 .g-48:hover .textbox{
@@ -351,6 +459,16 @@ input[type=text] {
 	position: absolute;
 	height:10%;
 	width: 100%;
+	background-color: #162252;
+	margin: 0;
+	padding:0;
+	display: inline-block;
+}
+.footerlogin{
+	position: absolute;
+	height:10%;
+	width: 100%;
+	bottom:0;
 	background-color: #162252;
 	margin: 0;
 	padding:0;
@@ -387,14 +505,65 @@ input[type=text] {
 .footer ul{
 	margin-top:1.5%;
 }
+
+.footerlogin ul{
+	margin-top:2%;
+}
+
 .page-wrap{
 	margin-bottom: 5%;
 }
 /*LOGIN PAGE*/
 
+.container{
+	width:30%;
+	margin:0 35% 0 35%;
+	background-color: #F0F0F0;
+	padding:1% 2% 2% 2%;
+	margin-top: 5%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+}
+
+.container input[type=text], input[type=password]{
+	width:100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display:inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+}
+
+button{
+	background-color: #384887;
+	color: white;
+	padding:14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width:100%;
+}
+
+button:hover{
+	opacity: 0.8;
+}
+
+
+.imgcontainer{
+	text-align: center;
+	margin: 24px 0 12px 0;
+}
+
+img.avatar{
+	width:20%;
+	border-radius: 50%;
+}
+
 /*For small screen only*/ 
 @media only screen and (min-width: 320px) and (max-width: 900px), (orientation: portrait){
   
+  h3 { 
+	margin-left:8px;
+}
   .g-60{
    width:100%;
   }
@@ -413,10 +582,10 @@ input[type=text] {
 	min-width: 320px;
 } 
 
-.g-25{
+.g-32{
 	font-size: 0.8em;
 }
-  .g-30{
+  .g-39{
   	width:97%;
   	margin-left:1.5%;
   }
@@ -437,8 +606,6 @@ input[type=text] {
 		margin:20px;
 	}
 
-
-
 	#search{
 		width:88%;
 		padding-left:5%;
@@ -457,14 +624,35 @@ input[type=text] {
 }
 
 #logo{
-	margin-left: 5%;
-
+	margin-left:5%;
+	margin-right:1%;
+	height:100%;
+	width:15%;
 }
+
+#rightnav{
+float:left;
+}
+
 .navigation-container{
 	width:90%;
 	margin-top:10px;
 }
 
+.dropdown{
+width:15%;
+}
+
+.dropbtn {
+	font-size: 35px;
+}
+.dropbtn p {
+	font-size:12px;
+}
+
+.dropbtn img {
+	height:20px;
+}
 }
 
 

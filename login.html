@@ -10,42 +10,39 @@
 		<a href="index.html"><img id="logo" src="../images/logogrey.PNG"></a>
 				<div class="dropdown">
 	 			 	<a href="dreams.html"><button class="dropbtn">&#9729;</br><p>Dreams</p> </button></a>
-	 			 		<div class="options">
-								<ul>
-									<li><a href="lifestyle">Lifestyle</a></li>
-									<li><a href="superpowers">Superpowers</a></li>
-									<li><a href="food">Food</a></li>
-									<li><a href="dreams"><i>More</i></a></li>
-								</ul>
-						</div>
+
 				</div>
 				<div class="dropdown">
 					<a href="nightmares.html"><button class="dropbtn"><img class="navlogo" src="../images/nightmaregrey.PNG"><img class="hovercolour" src="../images/nightmareblue.PNG"></br><p>Nightmares</p> </button></a>
 				</div>
 				<div class="dropdown">
-					<a href="login.html"><button class="dropbtn"><img class="navlogo" src="../images/profilegrey.PNG"><img class="hovercolour" src="../images/profileblue.PNG"></br><p>Login</p></button></a>
+					<a href="profile.html"><button class="dropbtn"><img class="navlogo" src="../images/profilegrey.PNG"><img class="hovercolour" src="../images/profileblue.PNG"></br><p>Profile</p></button></a>
 				</div>
 				<div class="dropdown">
 					<a href="upload.html"><button class="dropbtn"><img class="navlogo" src="../images/uploadgrey.PNG"><img class="hovercolour" src="../images/uploadblue.PNG"></br><p>Upload</p></button></a>
 				</div>
-
+				<div id="rightnav" class="dropdown">
+					<a href="login.html"><button class="dropbtn"><img class="navlogo" src="../images/profilegrey.PNG"><img class="hovercolour" src="../images/profileblue.PNG"></br><p>Login/Sign up</p></button></a>
+				</div>
 				<div id="search">
 					<input type="text" name="search" placeholder="Search">
 				</div>
 			</div>
 
+			<form action="/action_page.php">
 
+				<div class="container">
+					<div class="imgcontainer">
+						<img src="../images/profileblue.PNG" alt="Avatar" class="avatar">
+					</div>
+					<label><b>Username</b><label>
+					<input type="text" placeholder="Username" name="uname" required>
 
-	<div class="footer">
-	<div class="navigation-container">
-		<ul class="flex-container">
-			<li class="footnavigation"><a href="index.html"><img class="footlogo" src="../images/logoblue.PNG"></br>Home</a></li>
-			<li class="footnavigation"><a href="login.html"><img class="footlogo" src="../images/profileblue.PNG"></br>Login</a></li>
-			<li class="footnavigation"><a href="dreams.html"><img class="footlogo" src="../images/cloudblue.PNG"></br>Dreams</a></li>
-			<li class="footnavigation"><a href="nightmares.html"><img class="footlogo" src="../images/nightmareblue.PNG"></br>Nightmares</a></li>
-		</ul>
-	</div>
-	</div>
+					<label><b>Password</b></label>
+					<input type="password" placeholder="Password" name="psw" required>
 
+					<button type="submit">Login</button>
+					<input type="checkbox" checked="checked"> Remember me
+				</div>
 	</body>
 </html>
