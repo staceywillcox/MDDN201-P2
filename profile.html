@@ -3,6 +3,8 @@
 
 	<head>
 		<link rel="stylesheet" type="text/css" href="css.css">
+		<script type="text/javascript" src="sketch.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -28,14 +30,15 @@
 					<input type="text" name="search" placeholder="Search">
 				</div>
 			</div>
+			<div class="center">
 			<div class="g-20">
 				<img id="profileavatar" src="../images/profileblue.PNG">
 				<h4>Sandra Son</h4>
 				<ul>
-					<a href="#settings"><li><img src="../images/settings.PNG"/><p>Settings</p></li></a>
-					<a href="#myuploads"><li><img src="../images/uploadblue.PNG"/><p>My Uploads</p></li></a>
-					<a href="#history"><li><img src="../images/history.PNG"/><p>Veiwing History</p></li></a>
-					<a href="#favourites"><li><img src="../images/favourites.PNG"><p>Favourites</p></li></a>
+					<a href="#settings"><li onclick="settingsbutton()"> <img src="../images/settings.PNG"/><p>Settings</p></li></a>
+					<a href="#myuploads"><li onclick="myuploadsbutton()"><img src="../images/uploadblue.PNG"/><p>My Uploads</p></li></a>
+					<a href="#history"><li onclick="historybutton()"><img src="../images/history.PNG"/><p>Veiwing History</p></li></a>
+					<a href="#favourites"><li onclick="favouritesbutton()"><img src="../images/favourites.PNG"><p>Favourites</p></li></a>
 				</ul>
 			</div>
 			<div id="myuploads">
@@ -96,8 +99,123 @@
 </ul>
 </div>
 				
-				<div class="g-half">
+				<div id="halfright" class="g-half">
 				<h3>Uploaded Nightmares</h3>
+					<ul class="flex-containercolumn">
+			  		<li class="thumbnail">		
+			  			<img class="previewimg" src="../images/spongebob.JPG" >
+			  			<div class="thumbnailtext">
+							<h2>Killer Spongebob!</h2>
+							<p>Uploaded 23 hours ago<br>
+							Nightmare - Death<br>
+							968,252 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/icecrream.JPG">
+						<div class="thumbnailtext">
+							<h2>Ice Cream Land</h2>
+							<p>Uploaded 5 days ago<br>
+							Dream - Fantasy<br>
+							522,003 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	  			
+						<img class="previewimg" src="../images/money.JPG">
+						<div class="thumbnailtext">
+								<h2>I'm a Millionaire</h2>
+								<p>Uploaded 6 days ago<br>
+								Dream - Lifestyle<br>
+								400,154 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/saturn.JPG">
+						<div class="thumbnailtext">
+							<h2>Walking on Saturn</h2>
+							<p>Uploaded 2 weeks ago<br>
+							Dream - Space<br>
+							100,782 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	 	
+						<img class="previewimg" src="../images/chocolate.JPG">					
+						<div class="thumbnailtext">
+								<h2>Everything is Chocolate</h2>
+								<p>Uploaded 2 weeks ago<br>
+								Dream - Food<br>
+								97,067 Views</p>
+						</div>
+					</li>
+</ul>
+</div>
+</div>
+</div>
+
+			<div id="history">
+			<div class="g-65">
+			<h1>Viewing History</h1>
+				<div class="g-half">
+				<h3>Viewed Dreams</h3>
+					<ul class="flex-containercolumn">
+			  		<li class="thumbnail">		
+			  			<img class="previewimg" src="../images/spongebob.JPG" >
+			  			<div class="thumbnailtext">
+							<h2>Killer Spongebob!</h2>
+							<p>Uploaded 23 hours ago<br>
+							Nightmare - Death<br>
+							968,252 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/icecrream.JPG">
+						<div class="thumbnailtext">
+							<h2>Ice Cream Land</h2>
+							<p>Uploaded 5 days ago<br>
+							Dream - Fantasy<br>
+							522,003 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	  			
+						<img class="previewimg" src="../images/money.JPG">
+						<div class="thumbnailtext">
+								<h2>I'm a Millionaire</h2>
+								<p>Uploaded 6 days ago<br>
+								Dream - Lifestyle<br>
+								400,154 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/saturn.JPG">
+						<div class="thumbnailtext">
+							<h2>Walking on Saturn</h2>
+							<p>Uploaded 2 weeks ago<br>
+							Dream - Space<br>
+							100,782 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	 	
+						<img class="previewimg" src="../images/chocolate.JPG">					
+						<div class="thumbnailtext">
+								<h2>Everything is Chocolate</h2>
+								<p>Uploaded 2 weeks ago<br>
+								Dream - Food<br>
+								97,067 Views</p>
+						</div>
+					</li>
+</ul>
+</div>
+				
+				<div id="halfright" class="g-half">
+				<h3>Viewed Nightmares</h3>
 					<ul class="flex-containercolumn">
 			  		<li class="thumbnail">		
 			  			<img class="previewimg" src="../images/spongebob.JPG" >
@@ -154,9 +272,239 @@
 </div>
 			
 
+			<div id="settings">
+			<div class="g-65">
+			<h1>Settings</h1>
+				<div class="g-half">
+				<h3>Viewed Dreams</h3>
+					<ul class="flex-containercolumn">
+			  		<li class="thumbnail">		
+			  			<img class="previewimg" src="../images/spongebob.JPG" >
+			  			<div class="thumbnailtext">
+							<h2>Killer Spongebob!</h2>
+							<p>Uploaded 23 hours ago<br>
+							Nightmare - Death<br>
+							968,252 Views</p>
+						</div>
+					</li>
 
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/icecrream.JPG">
+						<div class="thumbnailtext">
+							<h2>Ice Cream Land</h2>
+							<p>Uploaded 5 days ago<br>
+							Dream - Fantasy<br>
+							522,003 Views</p>
+						</div>
+					</li>
 
-<!-- 	<div class="footer">
+			  		<li class="thumbnail">	  			
+						<img class="previewimg" src="../images/money.JPG">
+						<div class="thumbnailtext">
+								<h2>I'm a Millionaire</h2>
+								<p>Uploaded 6 days ago<br>
+								Dream - Lifestyle<br>
+								400,154 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/saturn.JPG">
+						<div class="thumbnailtext">
+							<h2>Walking on Saturn</h2>
+							<p>Uploaded 2 weeks ago<br>
+							Dream - Space<br>
+							100,782 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	 	
+						<img class="previewimg" src="../images/chocolate.JPG">					
+						<div class="thumbnailtext">
+								<h2>Everything is Chocolate</h2>
+								<p>Uploaded 2 weeks ago<br>
+								Dream - Food<br>
+								97,067 Views</p>
+						</div>
+					</li>
+</ul>
+</div>
+				
+				<div class="g-half">
+				<h3>Viewed Nightmares</h3>
+					<ul class="flex-containercolumn">
+			  		<li class="thumbnail">		
+			  			<img class="previewimg" src="../images/spongebob.JPG" >
+			  			<div class="thumbnailtext">
+							<h2>Killer Spongebob!</h2>
+							<p>Uploaded 23 hours ago<br>
+							Nightmare - Death<br>
+							968,252 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/icecrream.JPG">
+						<div class="thumbnailtext">
+							<h2>Ice Cream Land</h2>
+							<p>Uploaded 5 days ago<br>
+							Dream - Fantasy<br>
+							522,003 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	  			
+						<img class="previewimg" src="../images/money.JPG">
+						<div class="thumbnailtext">
+								<h2>I'm a Millionaire</h2>
+								<p>Uploaded 6 days ago<br>
+								Dream - Lifestyle<br>
+								400,154 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/saturn.JPG">
+						<div class="thumbnailtext">
+							<h2>Walking on Saturn</h2>
+							<p>Uploaded 2 weeks ago<br>
+							Dream - Space<br>
+							100,782 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	 	
+						<img class="previewimg" src="../images/chocolate.JPG">					
+						<div class="thumbnailtext">
+								<h2>Everything is Chocolate</h2>
+								<p>Uploaded 2 weeks ago<br>
+								Dream - Food<br>
+								97,067 Views</p>
+						</div>
+					</li>
+</ul>
+</div>
+</div>
+</div>
+
+			<div id="favourites">
+			<div class="g-65">
+			<h1>favourites</h1>
+				<div class="g-half">
+				<h3>Viewed Dreams</h3>
+					<ul class="flex-containercolumn">
+			  		<li class="thumbnail">		
+			  			<img class="previewimg" src="../images/spongebob.JPG" >
+			  			<div class="thumbnailtext">
+							<h2>Killer Spongebob!</h2>
+							<p>Uploaded 23 hours ago<br>
+							Nightmare - Death<br>
+							968,252 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/icecrream.JPG">
+						<div class="thumbnailtext">
+							<h2>Ice Cream Land</h2>
+							<p>Uploaded 5 days ago<br>
+							Dream - Fantasy<br>
+							522,003 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	  			
+						<img class="previewimg" src="../images/money.JPG">
+						<div class="thumbnailtext">
+								<h2>I'm a Millionaire</h2>
+								<p>Uploaded 6 days ago<br>
+								Dream - Lifestyle<br>
+								400,154 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/saturn.JPG">
+						<div class="thumbnailtext">
+							<h2>Walking on Saturn</h2>
+							<p>Uploaded 2 weeks ago<br>
+							Dream - Space<br>
+							100,782 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	 	
+						<img class="previewimg" src="../images/chocolate.JPG">					
+						<div class="thumbnailtext">
+								<h2>Everything is Chocolate</h2>
+								<p>Uploaded 2 weeks ago<br>
+								Dream - Food<br>
+								97,067 Views</p>
+						</div>
+					</li>
+</ul>
+</div>
+				
+				<div class="g-half">
+				<h3>Viewed Nightmares</h3>
+					<ul class="flex-containercolumn">
+			  		<li class="thumbnail">		
+			  			<img class="previewimg" src="../images/spongebob.JPG" >
+			  			<div class="thumbnailtext">
+							<h2>Killer Spongebob!</h2>
+							<p>Uploaded 23 hours ago<br>
+							Nightmare - Death<br>
+							968,252 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/icecrream.JPG">
+						<div class="thumbnailtext">
+							<h2>Ice Cream Land</h2>
+							<p>Uploaded 5 days ago<br>
+							Dream - Fantasy<br>
+							522,003 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	  			
+						<img class="previewimg" src="../images/money.JPG">
+						<div class="thumbnailtext">
+								<h2>I'm a Millionaire</h2>
+								<p>Uploaded 6 days ago<br>
+								Dream - Lifestyle<br>
+								400,154 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">			
+						<img class="previewimg" src="../images/saturn.JPG">
+						<div class="thumbnailtext">
+							<h2>Walking on Saturn</h2>
+							<p>Uploaded 2 weeks ago<br>
+							Dream - Space<br>
+							100,782 Views</p>
+						</div>
+					</li>
+
+			  		<li class="thumbnail">	 	
+						<img class="previewimg" src="../images/chocolate.JPG">					
+						<div class="thumbnailtext">
+								<h2>Everything is Chocolate</h2>
+								<p>Uploaded 2 weeks ago<br>
+								Dream - Food<br>
+								97,067 Views</p>
+						</div>
+					</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+			
+
+	<div class="footer">
 	<div class="navigation-container">
 		<ul class="flex-container">
 			<li class="footnavigation"><a href="index.html"><img class="footlogo" src="../images/logoblue.PNG"></br>Home</a></li>
@@ -165,7 +513,7 @@
 			<li class="footnavigation"><a href="nightmares.html"><img class="footlogo" src="../images/nightmareblue.PNG"></br>Nightmares</a></li>
 		</ul>
 	</div>
-	</div> -->
+	</div>
 
 	</body>
 </html>

@@ -196,26 +196,24 @@ input[type=text] {
 }
 
 .dreamscenter {
-	display: inline-block;
+	display:block;
 	background-color: #F0F0F0;
 	overflow: auto;
-	width:70%;
-	margin-top:1.5%;
-	margin-left: 15%;
-	margin-bottom: 5%;
-	min-width: 850px;
+	float:left;
+	width:78%;
+	margin-left: 20%;
 	position: relative;
 	padding-left: 1%;
 	padding-right: 1%;
 }
 
 .catagories{
-	width:14%;
+	width:20%;
 	height:100%;
 	float:left;
 	display: inline;
 	position: fixed;
-	margin-top: 1.5%;
+	margin-top: 5px;
 	background-color: #F0F0F0;
 }
 .catagories ul{
@@ -299,7 +297,6 @@ input[type=text] {
 
 .g-65{
 	width:70%;
-	margin-top:30px;
 	margin-left:60px;
 	float: left;
 	display: block;
@@ -309,17 +306,20 @@ input[type=text] {
 }
 
 .g-65 h1{
-	margin-left: 52px;
+	margin-left: 22px;
 
 }
 
 .g-half{
 	width:45%;
-	margin-left: 50px;
+	margin-left: 20px;
 	float: left;
 	display: inline-block;
 	position: relative;
 	overflow: hidden;
+}
+#halfright{
+	float: right;
 }
 .g-half img{
 	width:40%;
@@ -329,11 +329,12 @@ input[type=text] {
 }
 
 .g-20 li img{
-	height:30px;
+	height:70%;
 	width:auto;
 	overflow: visible;
-	margin:1.5%;
-	margin-right:20px; ;
+	margin-right:20px;
+	margin-top:2.5%;
+	
 	float: left;
 }
 
@@ -345,22 +346,23 @@ input[type=text] {
 
 .g-20 li{
 	height:40px;
-	padding:10px;
+	padding: 3px 10px;
 	margin:5px;
 	background-color: #ffffff;
 }
 
 .g-20 li p{
-display: block;
-position: relative;
-float: left;
-margin-top:12.5px;
+	display: block;
+	position: relative;
+	float: left;
+	margin-top:12.5px;
 }
 
 h4{
 	text-align: center;
 	margin:7px;
 }
+
 #profileavatar{
 	width:50%;
 	margin-left: 25%;
@@ -409,11 +411,26 @@ h4{
 
 .thumbnail{
 	margin-bottom: 10px;
-	width:80%;
+	width:100%;
 	padding: 10px;
 	background-color: #f0f0f0;
 }
 
+#myuploads{
+	display: none;
+}
+
+#history{
+	display: none;
+}
+
+#settings{
+	display: block;
+}
+
+#favourites{
+	display: none;
+}
 .ranking{
 	position: absolute;
 	top:0;
@@ -461,19 +478,11 @@ h4{
 	width: 100%;
 	background-color: #162252;
 	margin: 0;
+	margin-top: 5%;
 	padding:0;
 	display: inline-block;
 }
-.footerlogin{
-	position: absolute;
-	height:10%;
-	width: 100%;
-	bottom:0;
-	background-color: #162252;
-	margin: 0;
-	padding:0;
-	display: inline-block;
-}
+
 
 .flex-container, li{
 	list-style: none;
@@ -489,7 +498,7 @@ h4{
 }
 
 .footlogo{
-	height:40px;
+	height:20px;
 }
 .footnavigation{
 	font-size: 0.8em;
@@ -497,8 +506,9 @@ h4{
 
 }
 .navigation-container{
-	width:50%;
+	width:30%;
 	margin: 0 auto;
+	margin-top: 1.5%;
 
 }
 
@@ -506,9 +516,6 @@ h4{
 	margin-top:1.5%;
 }
 
-.footerlogin ul{
-	margin-top:2%;
-}
 
 .page-wrap{
 	margin-bottom: 5%;
