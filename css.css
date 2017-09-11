@@ -33,7 +33,7 @@ h3 {
 }
 
 #header {
-    background-color: #162252; 
+    background-color: #9BC4E2; 
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	display: inline-block;
 	width:100%;
@@ -83,7 +83,7 @@ input[type=text] {
 
 /* Style The Dropdown Button */
 .dropbtn {
-	background-color: #162252;
+	background-color: #9BC4E2;
     color: #F5F5F5;
     padding: 5px;
     width: 100%;
@@ -111,7 +111,7 @@ input[type=text] {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     /*background-color: #f5f5f5;*/
-    color:#384887;
+    color:#A0A0A0;
 
 }
 
@@ -183,17 +183,19 @@ input[type=text] {
   justify-content: space-around;
 }
 
-
 .center {
 	display: inline-block;
 	margin-left: 15%;
-	background-color: #F0F0F0;
+	/*background-color: #F0F0F0;*/
+	background-color: rgba(155, 196, 226, 0.1);
+
+
 	overflow: auto;
 	margin-right:15%;
 	margin-top:1.5%;
 	min-width: 850px;
 	position: relative;
-}
+	}
 
 .dreamscenter {
 	display:block;
@@ -409,11 +411,25 @@ h4{
 }
 
 
-.thumbnail{
+.thumbnail {
 	margin-bottom: 10px;
 	width:100%;
 	padding: 10px;
 	background-color: #f0f0f0;
+}
+
+
+ .settingoptions{
+	margin-bottom: 10px;
+	width:100%;
+	padding: 20px 10px;
+	background-color: white;
+	list-style: none;
+}
+
+.settingswindow{
+	width:100%;
+	background-color: white;
 }
 
 #myuploads{
@@ -476,7 +492,7 @@ h4{
 	position: absolute;
 	height:10%;
 	width: 100%;
-	background-color: #162252;
+	background-color: #282828;
 	margin: 0;
 	margin-top: 5%;
 	padding:0;
@@ -541,7 +557,7 @@ h4{
 }
 
 button{
-	background-color: #384887;
+	background-color: #3B5249;
 	color: white;
 	padding:14px 20px;
 	margin: 8px 0;
