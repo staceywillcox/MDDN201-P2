@@ -3,7 +3,7 @@ body {
 	color: #303030;
 	margin:0;
 	padding:0;
-	font-family: arial;
+	font-family: helvetica;
 }
 
 a {
@@ -21,7 +21,7 @@ h3 {
 
 .previewinfo h2 { 
 	font-size: 1em; 
-	
+
 }
 
 .previewinfo p {
@@ -43,6 +43,11 @@ h3 {
 	display: none;
 }
 
+.navlogo{
+	display: inline-block;
+
+} 
+
 .dropdown:hover .hovercolour{
 	display: inline-block;
 }
@@ -50,6 +55,7 @@ h3 {
 .dropdown:hover .navlogo{
 	display: none;
 }
+
 
 #logo {
 	height:60px;
@@ -70,7 +76,7 @@ h3 {
 #rightnav{
 	float:right;
 }
-input[type=text] {
+#search input[type=text] {
 	padding: 10px;
     width: 100%;
 }
@@ -111,7 +117,7 @@ input[type=text] {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {
     /*background-color: #f5f5f5;*/
-    color:#A0A0A0;
+    color:#282828;
 
 }
 
@@ -121,7 +127,7 @@ input[type=text] {
 }
 
  button.navilogin{
- 	background-color: #f0f0f0;
+ 	background-color: #282828;
 	color: #384887;
 	padding:5px;
 	border: none;
@@ -151,6 +157,41 @@ input[type=text] {
 	height: auto;
 	transition: 0.5s;
 	display: block;
+}
+
+#vrbutton{
+	width:90px;
+	float: right;
+	margin-right:25px ;
+	display: block;
+	position: relative;
+}
+
+#vrbutton:hover{
+opacity:0.8;
+}
+
+#vrpage{
+	background-image: url("images/spongebob.JPG");
+	background-repeat: no-repeat;
+	background-size:cover;
+}
+#vrshade{
+	position: absolute; 
+	top: 0; 
+	left: 0;
+	width:100%;
+	height: 100%;
+	background-color:rgba(40, 40, 40, 0.7);
+
+}
+
+#vrtext{
+	width: 50%;
+	display: block;
+	margin:10% auto;
+	color:#F5F5F5;
+	text-align: center;
 }
 
 .flex-container {
@@ -188,14 +229,13 @@ input[type=text] {
 	margin-left: 15%;
 	/*background-color: #F0F0F0;*/
 	background-color: rgba(155, 196, 226, 0.1);
-
-
 	overflow: auto;
 	margin-right:15%;
 	margin-top:1.5%;
-	min-width: 850px;
+	width:70%;
 	position: relative;
 	}
+
 
 .dreamscenter {
 	display:block;
@@ -314,6 +354,7 @@ input[type=text] {
 
 .g-half{
 	width:45%;
+	height:100%;
 	margin-left: 20px;
 	float: left;
 	display: inline-block;
@@ -421,19 +462,107 @@ h4{
 
  .settingoptions{
 	margin-bottom: 10px;
-	width:100%;
+	width:90%;
 	padding: 20px 10px;
 	background-color: white;
 	list-style: none;
 }
 
-.settingswindow{
-	width:100%;
+#settingswindow{
 	background-color: white;
+	display: block;
+	float: right;
+}
+
+#settingswindow ul{
+	padding-left:10px;
+	margin-top:10px;
+
+	}
+
+#settingswindow li{
+	padding: 10px 0 10px 0;
+	margin:0;
+	}
+
+/*SWITCH*/
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: block;
+  width: 50px;
+  height: 20px;
+  float:right;
+}
+
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 12px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+#editaccount{
+	display: block;
+}
+
+#password{
+	display: none;
+}
+
+#privacy{
+	display: none;
+}
+
+#notifications{
+	display: none;
+}
+
+#statistics{
+	display: none;
+}
+
+#restrictions{
+	display: none;
 }
 
 #myuploads{
-	display: none;
+	display: block;
 }
 
 #history{
@@ -441,7 +570,7 @@ h4{
 }
 
 #settings{
-	display: block;
+	display: none;
 }
 
 #favourites{
@@ -505,7 +634,7 @@ h4{
 }
 
 .flex-container a{
-	color:#384887;
+	color:grey;
 	text-decoration: none;
 }
 
@@ -537,8 +666,11 @@ h4{
 	margin-bottom: 5%;
 }
 /*LOGIN PAGE*/
+#login-container {
+	display: block;
+}
 
-.container{
+.login{
 	width:30%;
 	margin:0 35% 0 35%;
 	background-color: #F0F0F0;
@@ -547,7 +679,7 @@ h4{
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
 }
 
-.container input[type=text], input[type=password]{
+.login input[type=text], input[type=password]{
 	width:100%;
 	padding: 12px 20px;
 	margin: 8px 0;
@@ -557,7 +689,7 @@ h4{
 }
 
 button{
-	background-color: #3B5249;
+	background-color: #282828;
 	color: white;
 	padding:14px 20px;
 	margin: 8px 0;
@@ -580,6 +712,87 @@ img.avatar{
 	width:20%;
 	border-radius: 50%;
 }
+/*SIGNUP*/
+.signup{
+    display: block;
+    float:right;
+    margin:0;
+    position: relative;
+    width:80px;
+    height:17px;
+    text-align: center;
+    border:none;
+    font-family: Arial;
+    font-size:16px;
+    color: inherit;
+    cursor: pointer;
+}
+
+#signup-container {
+		display: none;
+}
+
+#signup-container h2 {
+		text-align: center;
+		margin-top: 5px;
+}
+
+/*UPLOAD*/
+.upload{
+	width: 55%;
+	height:400px;
+	background-color: white;
+	margin:20px;
+	display: inline-block;
+	position: relative;
+	float: left;
+}	
+
+
+#clickupload{
+	width:250px;
+	height: 60px;
+	background-color:#f0f0f0;
+	display: block;
+	margin:150px auto;
+
+}
+#clickupload p{
+	padding:20px;
+	text-align: center;
+	margin:0;
+}
+
+#uploadform{
+	margin-top: 20px;
+	width:40%;
+	float:left;
+	overflow: hidden;
+
+}
+
+#uploadform input[type=text] {
+	width:100%;
+	padding:10px 0px 10px 10px ;
+	margin-bottom: 5px;
+	border:none;
+
+}
+
+#uploadform select{
+	width:100%;
+	padding:10px 0px 10px 10px ;
+	margin-bottom: 5px;
+	border:none;
+}
+/*EDIT SETTINGS*/
+.edit{
+	text-align: right;
+	float:right;
+	color:blue;
+	font-size: 10px;
+	margin-right:10px;
+}
 
 /*For small screen only*/ 
 @media only screen and (min-width: 320px) and (max-width: 900px), (orientation: portrait){
@@ -598,12 +811,7 @@ img.avatar{
 	padding-top:2.5%;
 }
 
-.center{
-	margin-left: 2.5%;
-	margin-right: 2.5%;
-	background-color: rgba(0,0,0,0);
-	min-width: 320px;
-} 
+
 
 .g-32{
 	font-size: 0.8em;
@@ -639,7 +847,7 @@ img.avatar{
 		margin:0;
 }
 
-	input[type=text] {
+		#search input[type=text] {
 		padding: 5px;
    		width: 100%;
    	 -webkit-transition: width 0.4s ease-in-out;

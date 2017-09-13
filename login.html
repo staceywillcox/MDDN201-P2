@@ -3,46 +3,66 @@
 
 	<head>
 		<link rel="stylesheet" type="text/css" href="css.css">
+		<script type="text/javascript" src="sketch.js"></script>
 	</head>
 
 	<body>
 		<div id="header">
-		<a href="index.html"><img id="logo" src="../images/logogrey.PNG"></a>
+		<a href="index.html"><img id="logo" src="images/logogrey.PNG"></a>
 				<div class="dropdown">
 	 			 	<a href="dreams.html"><button class="dropbtn">&#9729;</br><p>Dreams</p> </button></a>
 
 				</div>
 				<div class="dropdown">
-					<a href="nightmares.html"><button class="dropbtn"><img class="navlogo" src="../images/nightmaregrey.PNG"><img class="hovercolour" src="../images/nightmareblue.PNG"></br><p>Nightmares</p> </button></a>
+					<a href="nightmares.html"><button class="dropbtn"><img class="navlogo" src="images/nightmaregrey.PNG"><img class="hovercolour" src="images/nightmareblue.PNG"></br><p>Nightmares</p> </button></a>
 				</div>
 				<div class="dropdown">
-					<a href="profile.html"><button class="dropbtn"><img class="navlogo" src="../images/profilegrey.PNG"><img class="hovercolour" src="../images/profileblue.PNG"></br><p>Profile</p></button></a>
+					<a href="profile.html"><button class="dropbtn"><img class="navlogo" src="images/profilegrey.PNG"><img class="hovercolour" src="images/profileblue.PNG"></br><p>Profile</p></button></a>
 				</div>
 				<div class="dropdown">
-					<a href="upload.html"><button class="dropbtn"><img class="navlogo" src="../images/uploadgrey.PNG"><img class="hovercolour" src="../images/uploadblue.PNG"></br><p>Upload</p></button></a>
+					<a href="upload.html"><button class="dropbtn"><img class="navlogo" src="images/uploadgrey.PNG"><img class="hovercolour" src="images/uploadblue.PNG"></br><p>Upload</p></button></a>
 				</div>
 				<div id="rightnav" class="dropdown">
-					<a href="login.html"><button class="dropbtn"><img class="navlogo" src="../images/profilegrey.PNG"><img class="hovercolour" src="../images/profileblue.PNG"></br><p>Login/Sign up</p></button></a>
+					<a href="login.html"><button class="dropbtn"><img class="navlogo" src="images/profilegrey.PNG"><img class="hovercolour" src="images/profileblue.PNG"></br><p>Login/Sign up</p></button></a>
 				</div>
 				<div id="search">
 					<input type="text" name="search" placeholder="Search">
 				</div>
 			</div>
-
-			<form action="/action_page.php">
-
-				<div class="container">
+			<div id="login-container" class="login">
+				<form onsubmit="profile.html">
 					<div class="imgcontainer">
-						<img src="../images/profileblue.PNG" alt="Avatar" class="avatar">
+						<img src="images/profileblue.PNG" alt="Avatar" class="avatar">
 					</div>
 					<label><b>Username</b><label>
-					<input type="text" placeholder="Username" name="uname" required>
+					<input type="text" placeholder="Username" name="username">
 
 					<label><b>Password</b></label>
-					<input type="password" placeholder="Password" name="psw" required>
-
-					<button type="submit">Login</button>
+					<input type="password" placeholder="Password" name="password">
+				</form>
+					<a href="profile.html"><button>Login</button></a>
 					<input type="checkbox" checked="checked"> Remember me
-				</div>
+					<a href="#signup-box" onclick="signup()" class="signup">Sign Up</a>
+			</div>
+
+			<div id="signup-container" class="login">
+				<h2>Sign Up</h2>
+				<form >
+					<label><b>First Name</b><label>
+					<input type="text" placeholder="First Name" name="firstname">
+
+					<label><b>Last Name</b></label>
+					<input type="text" placeholder="Last Name" name="lastname">
+
+					<label><b>Email</b><label>
+					<input type="text" placeholder="E-mail" name="mail">
+
+					<label><b>Username</b></label>
+					<input type="text" placeholder="Username" name="username">
+					<label><b>Password</b><label>
+					<input type="password" placeholder="Password" name="password" >
+				</form>
+				<a href="profile.html"><button>Sign Up</button></a>
+			</div>
 	</body>
 </html>
