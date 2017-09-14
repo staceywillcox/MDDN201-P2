@@ -17,6 +17,8 @@ h3 {
 
 .previewinfo{
 	margin-left: 2.5%;
+	float:left;
+	width:100%;
 }
 
 .previewinfo h2 { 
@@ -29,7 +31,6 @@ h3 {
 	float: left;
 	margin-top: 0;
 
-	
 }
 
 #header {
@@ -161,7 +162,7 @@ h3 {
 
 #vrbutton{
 	width:90px;
-	float: right;
+	float: left;
 	margin-right:25px ;
 	display: block;
 	position: relative;
@@ -279,7 +280,7 @@ opacity:0.8;
 }
 
 .g-60{
-	width: 60%;
+	width: 70%;
 	float: left;
 	display: block;
 	position: relative;
@@ -288,7 +289,7 @@ opacity:0.8;
 
 
 .g-39{
-	width: 39%;
+	width: 29%;
 	float: left;
 	display: inline-block;
 	position: relative;
@@ -296,7 +297,7 @@ opacity:0.8;
 }
 
 .g-48{
-	width: 48%;
+	width: 100%;
 	position: relative;
 	overflow: hidden;
 	margin-bottom:10px;
@@ -618,17 +619,22 @@ input:checked + .slider:before {
 }
 
 .footer{
-	position: absolute;
-	height:10%;
+	position: relative;
+	height:70px;
 	width: 100%;
 	background-color: #282828;
 	margin: 0;
 	margin-top: 5%;
 	padding:0;
-	display: inline-block;
+	bottom:0;
+
+	
 }
+/*lightslider override*/
+.lSSlideOuter{
+	width:100%;
 
-
+}
 .flex-container, li{
 	list-style: none;
 }
@@ -653,7 +659,7 @@ input:checked + .slider:before {
 .navigation-container{
 	width:30%;
 	margin: 0 auto;
-	margin-top: 1.5%;
+	padding:10px;
 
 }
 

@@ -80,3 +80,10 @@ function login() {
     document.getElementById("signup-container").style.display = "none"; 
 }
 
+
+        $(document).ready(function() {
+            $("#lightSlider").lightSlider({
+                item: 4,
+              
+            }); 
+        });
